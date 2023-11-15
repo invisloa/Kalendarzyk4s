@@ -3,7 +3,7 @@
 
 
 
-
+When Edited MainType it doesnt refresh accordingly
 
 
 /*   this is not working because of stack layout event tho i set columnspan of frame its inside of stacklayout 

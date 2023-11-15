@@ -240,6 +240,7 @@ public class LocalMachineEventRepository : IEventRepository
 	}
 	public async Task<List<IMainEventType>> GetMainEventTypesListAsync()
 	{
+		// C:\Users\invis\AppData\Local\Packages\com.companyname.kalendarzyk4s_9zz4h110yvjzm\LocalState
 		if (File.Exists(MainEventsTypesFilePath))
 		{
 			var jsonString = await File.ReadAllTextAsync(MainEventsTypesFilePath);
@@ -314,11 +315,13 @@ public class LocalMachineEventRepository : IEventRepository
 		OnUserEventTypeListChanged?.Invoke();
 		await SaveSubEventTypesListAsync();
 	}
-	public async Task UpdateEventAsync(IGeneralEventModel eventToUpdate)   // cos nie tak	???
+	public async Task UpdateEventAsync(IGeneralEventModel eventToUpdate)   // TO TEST
 	{
-		var eventToUpdateInList = AllEventsList.FirstOrDefault(e => e.Id == eventToUpdate.Id);
-		if (eventToUpdateInList != null)
+		var x = AllEventsList.FirstOrDefault(e => e.Id == eventToUpdate.Id);
+		if (x != null)
 		{
+			x = eventToUpdate;
+
 			// TO CHECK
 			await SaveEventsListAsync();
 		}
@@ -330,6 +333,15 @@ public class LocalMachineEventRepository : IEventRepository
 
 	public async Task UpdateSubEventTypeAsync(ISubEventTypeModel eventTypeToUpdate)
 	{
+		var x = AllUserEventTypesList.FirstOrDefault(e => e.Equals(eventTypeToUpdate));
+		if (x != null)
+		{
+			x = eventTypeToUpdate;
+		}
+		else
+		{
+			await Task.CompletedTask;
+		}
 		await SaveSubEventTypesListAsync();
 		OnUserEventTypeListChanged?.Invoke();
 	}

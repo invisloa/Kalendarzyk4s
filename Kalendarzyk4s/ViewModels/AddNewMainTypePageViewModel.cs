@@ -187,9 +187,11 @@ namespace Kalendarzyk4s.ViewModels
 			var iconForMainEventType = Factory.CreateIMainTypeVisualElement(SelectedVisualElementString, BackgroundColor, TextColor);
 			if (_isEdit)
 			{
+				var x = _eventRepository.AllMainEventTypesList.Single(x => x.Equals(_currentMainType));
 				_currentMainType.Title = MainTypeName;
 				_currentMainType.SelectedVisualElement = iconForMainEventType;
 				MainTypeName = string.Empty;
+				x = _currentMainType;
 				await _eventRepository.UpdateMainEventTypeAsync(_currentMainType);
 				await Shell.Current.GoToAsync("..");    // TODO CHANGE NOT WORKING!!!
 			}

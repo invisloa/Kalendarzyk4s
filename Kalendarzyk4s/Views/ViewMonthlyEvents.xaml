@@ -13,7 +13,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <!-- Date layout -->
         <customControls:TodayAndSelectedDateCC Grid.Row="0"/>
@@ -26,7 +25,7 @@
         <!--<customControls:AddNewEventAndTypeBtnsCC Grid.Row="2"/>-->
 
         <!--Events Grid-->
-        <ScrollView Grid.Row="2" Orientation="Vertical" HeightRequest="400">
+        <ScrollView Grid.Row="2" Orientation="Vertical" >
             <customControls:MonthlyEventsControl 
                 x:Name="monthlyEventsControl"
                 AllEventsList="{Binding AllEventsListOC}" 
