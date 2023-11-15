@@ -153,6 +153,10 @@ namespace Kalendarzyk4s.ViewModels.EventOperations
 			// ADD EVENT MICROTASKS if IsMicroTaskType
 			if (_selectedCurrentEvent.EventType.IsMicroTaskType)
 			{
+				if(_selectedCurrentEvent.MicroTasksList == null)
+				{
+					_selectedCurrentEvent.MicroTasksList = new List<MicroTaskModel>();
+				}
 				MicroTasksCCAdapter.MicroTasksOC = new ObservableCollection<MicroTaskModel>(_selectedCurrentEvent.MicroTasksList);
 			}
 			IsCompleteFrameCommand = new RelayCommand(() => IsValueTypeSelected = !IsValueTypeSelected);

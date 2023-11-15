@@ -23,9 +23,10 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			// .UseLocalNotification()
+
 			.UseMauiCommunityToolkit()
-			// After initializing the .NET MAUI Community Toolkit, add additional fonts
+// turned off for now... not working- some strange bug..			.UseLocalNotification()
+
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
