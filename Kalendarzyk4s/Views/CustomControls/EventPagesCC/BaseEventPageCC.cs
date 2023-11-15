@@ -1,7 +1,7 @@
-﻿namespace CalendarT1.Views.CustomControls
+﻿namespace Kalendarzyk4s.Views.CustomControls
 {
 	using Microsoft.Maui.Graphics;
-	using CalendarT1.Models.EventModels;
+	using Kalendarzyk4s.Models.EventModels;
 	using Microsoft.Maui.Layouts;
 	using System;
 	using System.Collections.ObjectModel;

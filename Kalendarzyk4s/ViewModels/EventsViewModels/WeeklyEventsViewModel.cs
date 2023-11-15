@@ -1,6 +1,6 @@
-﻿using CalendarT1.Services.DataOperations.Interfaces;
+﻿using Kalendarzyk4s.Services.DataOperations;
 
-namespace CalendarT1.ViewModels.EventsViewModels
+namespace Kalendarzyk4s.ViewModels.EventsViewModels
 {
 	public class WeeklyEventsViewModel : AbstractEventViewModel
 	{

@@ -1,10 +1,7 @@
-﻿using CalendarT1.Models.EventTypesModels;
-using Kalendarzyk4s.Models.EventModels;
-using Kalendarzyk4s.Models.EventTypesModels;
+﻿using Kalendarzyk4s.Models.EventTypesModels;
 using Newtonsoft.Json;
-using System.Text.Json.Serialization;
 
-namespace CalendarT1.Models.EventModels
+namespace Kalendarzyk4s.Models.EventModels
 {
 	public abstract class AbstractEventModel : IGeneralEventModel
 	{

@@ -1,6 +1,6 @@
-﻿using CalendarT1.Models.EventModels;
+﻿using Kalendarzyk4s.Models.EventModels;
 
-namespace CalendarT1.Models.EventTypesModels
+namespace Kalendarzyk4s.Models.EventTypesModels
 {
 	public interface ISubEventTypeModel : IEquatable<ISubEventTypeModel>
 	{

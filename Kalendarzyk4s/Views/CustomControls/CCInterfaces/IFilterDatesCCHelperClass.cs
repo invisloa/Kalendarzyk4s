@@ -1,4 +1,4 @@
-﻿namespace CalendarT1.Views.CustomControls.CCInterfaces
+﻿namespace Kalendarzyk4s.Views.CustomControls.CCInterfaces
 {
 	public interface IFilterDatesCCHelperClass
 	{

@@ -1,16 +1,16 @@
-﻿using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.Services.EventsSharing;
-using CalendarT1.ViewModels;
-using CalendarT1.ViewModels.EventsViewModels;
+﻿using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.Services.EventsSharing;
+using Kalendarzyk4s.ViewModels;
+using Kalendarzyk4s.ViewModels.EventsViewModels;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 using Plugin.LocalNotification;
 
-namespace CalendarT1;
+namespace Kalendarzyk4s;
 
 public static class MauiProgram
 {
-	private const string DefaultProgramName = "CalendarT1";
+	private const string DefaultProgramName = "Kalendarzyk4s";
 	private const string DefaultJsonEventsFileName = "CalendarEventsD";
 	private const string DefaultJsonUserTypesFileName = "CalendarTypesOfEventsD";
 
@@ -23,7 +23,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.UseLocalNotification()
+			// .UseLocalNotification()
 			.UseMauiCommunityToolkit()
 			// After initializing the .NET MAUI Community Toolkit, add additional fonts
 			.ConfigureFonts(fonts =>
@@ -55,7 +55,7 @@ public static class MauiProgram
 		//builder.Services.AddSingleton(eventFactories);
 
 		// Preferences Setting General Properties
-		Preferences.Default.Set("ProgramName", "CalendarT1");
+		Preferences.Default.Set("ProgramName", "Kalendarzyk4s");
 		Preferences.Default.Set("JsonEventsFileName", "CalendarEvents");
 		Preferences.Default.Set("JsonSubTypesFileName", "CalendarSubTypesOfEvents");
 		Preferences.Default.Set("JsonMainTypesFileName", "CalendarMainTypesOfEvents");

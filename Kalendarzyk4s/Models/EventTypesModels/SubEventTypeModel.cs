@@ -1,10 +1,11 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.ViewModels;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.ViewModels;
 using Newtonsoft.Json;
 using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
+using JsonIgnoreAttribute = Newtonsoft.Json.JsonIgnoreAttribute;
 
-namespace CalendarT1.Models.EventTypesModels
+namespace Kalendarzyk4s.Models.EventTypesModels
 {
 	public class SubEventTypeModel : BaseViewModel, ISubEventTypeModel
 	{

@@ -1,11 +1,11 @@
-﻿using CalendarT1.ViewModels;
+﻿using Kalendarzyk4s.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Models.EventModels
+namespace Kalendarzyk4s.Models.EventModels
 {
 	public class MicroTaskModel : BaseViewModel
 	{

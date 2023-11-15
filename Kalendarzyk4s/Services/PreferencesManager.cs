@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Services
+namespace Kalendarzyk4s.Services
 {
 	public static class PreferencesManager
 	{

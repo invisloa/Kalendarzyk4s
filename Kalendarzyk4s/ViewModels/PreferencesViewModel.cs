@@ -1,8 +1,8 @@
-﻿using CalendarT1.Services;
+﻿using Kalendarzyk4s.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Windows.Input;
 
-namespace CalendarT1.ViewModels
+namespace Kalendarzyk4s.ViewModels
 {
 	public class PreferencesViewModel : BaseViewModel
 	{

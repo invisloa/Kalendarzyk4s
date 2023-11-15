@@ -55,7 +55,7 @@ if (eventTimeSpan.TotalHours > 1)
 // main events types do not segregate 
 // monthly view days of the week names are not centered
 /*Severity Count	Data Context	Binding Path	Target	Target Type	Description	File	Line	Project
-Error	1	EventOperationsViewModel	IsCompleteFrameCommand	TapGestureRecognizer.Command	ICommand	'IsCompleteFrameCommand' property not found on 'CalendarT1.ViewModels.EventOperations.EventOperationsViewModel', target property: 'Microsoft.Maui.Controls.TapGestureRecognizer.Command'    C: \Users\invis\source\repos\CalendarT1\CalendarT1\Views\EventPage.xaml	125	CalendarT1
+Error	1	EventOperationsViewModel	IsCompleteFrameCommand	TapGestureRecognizer.Command	ICommand	'IsCompleteFrameCommand' property not found on 'Kalendarzyk4s.ViewModels.EventOperations.EventOperationsViewModel', target property: 'Microsoft.Maui.Controls.TapGestureRecognizer.Command'    C: \Users\invis\source\repos\Kalendarzyk4s\Kalendarzyk4s\Views\EventPage.xaml	125	Kalendarzyk4s
 
 //< Frame.GestureRecognizers >
 //	< TapGestureRecognizer Command = "{Binding IsCompleteFrameCommand}" />

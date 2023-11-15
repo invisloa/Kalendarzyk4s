@@ -1,6 +1,6 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.ViewModels;
-using CalendarT1.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.ViewModels;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace CalendarT1.Views.CustomControls.CCViewModels
+namespace Kalendarzyk4s.Views.CustomControls.CCViewModels
 {
 	public class MicroTasksCCAdapterVM : BaseViewModel, IMicroTasksCC
 	{

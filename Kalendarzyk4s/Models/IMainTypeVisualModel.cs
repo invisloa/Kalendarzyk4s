@@ -1,4 +1,4 @@
-﻿namespace CalendarT1.Models
+﻿namespace Kalendarzyk4s.Models
 {
 	public interface IMainTypeVisualModel : IEquatable<object>
 	{

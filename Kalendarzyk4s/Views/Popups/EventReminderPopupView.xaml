@@ -1,6 +1,6 @@
 <mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CalendarT1.Views.EventReminderPopupView"
+             x:Class="Kalendarzyk4s.Views.EventReminderPopupView"
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
              CanBeDismissedByTappingOutsideOfPopup="False"
                 >

@@ -1,10 +1,10 @@
-using CalendarT1.Helpers;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.ViewModels.EventOperations;
-using CalendarT1.ViewModels.EventsViewModels;
+using Kalendarzyk4s.Helpers;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.ViewModels.EventOperations;
+using Kalendarzyk4s.ViewModels.EventsViewModels;
 
-namespace CalendarT1.Views;
+namespace Kalendarzyk4s.Views;
 
 public partial class ViewAllEventsPage : ContentPage
 {

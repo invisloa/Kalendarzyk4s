@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kalendarzyk4s.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;

@@ -1,7 +1,7 @@
-using CalendarT1.Helpers;
-using CalendarT1.ViewModels.EventsViewModels;
+using Kalendarzyk4s.Helpers;
+using Kalendarzyk4s.ViewModels.EventsViewModels;
 
-namespace CalendarT1.Views;
+namespace Kalendarzyk4s.Views;
 
 public partial class ViewMonthlyEvents : ContentPage
 {

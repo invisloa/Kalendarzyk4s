@@ -1,6 +1,6 @@
-using CalendarT1.ViewModels;
+using Kalendarzyk4s.ViewModels;
 
-namespace CalendarT1.Views;
+namespace Kalendarzyk4s.Views;
 
 public partial class PreferencesPage : ContentPage
 {

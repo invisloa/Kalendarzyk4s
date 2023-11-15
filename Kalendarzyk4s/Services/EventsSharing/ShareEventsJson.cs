@@ -1,8 +1,8 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Services.DataOperations.Interfaces;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Services.DataOperations;
 using Newtonsoft.Json;
 
-namespace CalendarT1.Services.EventsSharing
+namespace Kalendarzyk4s.Services.EventsSharing
 {
 	public class ShareEventsJson : IShareEvents
 	{

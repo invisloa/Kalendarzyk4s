@@ -1,9 +1,9 @@
-﻿using CalendarT1.Helpers;
-using CalendarT1.Models;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.Views;
+﻿using Kalendarzyk4s.Helpers;
+using Kalendarzyk4s.Models;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.Views;
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.ViewModels
+namespace Kalendarzyk4s.ViewModels
 {
 	public class AddNewMainTypePageViewModel : BaseViewModel
 	{

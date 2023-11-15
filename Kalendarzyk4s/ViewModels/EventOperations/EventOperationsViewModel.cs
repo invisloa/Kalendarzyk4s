@@ -1,19 +1,19 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.Services.EventsSharing;
-using CalendarT1.Views.CustomControls;
-using CalendarT1.Views.CustomControls.CCInterfaces;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.Services.EventsSharing;
+using Kalendarzyk4s.Views.CustomControls;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Microsoft.Maui.Controls;
 using System.Diagnostics;
 using CommunityToolkit;
-using CalendarT1.Helpers;
+using Kalendarzyk4s.Helpers;
 
-namespace CalendarT1.ViewModels.EventOperations
+namespace Kalendarzyk4s.ViewModels.EventOperations
 {
 	class EventOperationsViewModel : EventOperationsBaseViewModel
 	{

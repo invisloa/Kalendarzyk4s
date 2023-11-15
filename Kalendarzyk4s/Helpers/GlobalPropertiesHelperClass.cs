@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Helpers
+namespace Kalendarzyk4s.Helpers
 {
 	public static class GlobalPropertiesHelperClass
 	{

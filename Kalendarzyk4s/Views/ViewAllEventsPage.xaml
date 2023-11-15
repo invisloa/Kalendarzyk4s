@@ -1,12 +1,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CalendarT1.Views.ViewAllEventsPage"
-             xmlns:models="clr-namespace:CalendarT1.Models.EventModels"
+             x:Class="Kalendarzyk4s.Views.ViewAllEventsPage"
+             xmlns:models="clr-namespace:Kalendarzyk4s.Models.EventModels"
              xmlns:i="clr-namespace:System.Windows.Input;assembly=System.ObjectModel"
-             xmlns:local="clr-namespace:CalendarT1.ViewModels.EventsViewModels"
-             xmlns:type_models="clr-namespace:CalendarT1.Models.EventTypesModels;assembly=CalendarT1"
+             xmlns:local="clr-namespace:Kalendarzyk4s.ViewModels.EventsViewModels"
+             xmlns:type_models="clr-namespace:Kalendarzyk4s.Models.EventTypesModels;assembly=Kalendarzyk4s"
              x:DataType="local:AllEventsViewModel"
-             xmlns:customControls="clr-namespace:CalendarT1.Views.CustomControls"
+             xmlns:customControls="clr-namespace:Kalendarzyk4s.Views.CustomControls"
              Title="View All Events"
              BackgroundColor="{DynamicResource MainBackgroundColor}">
 

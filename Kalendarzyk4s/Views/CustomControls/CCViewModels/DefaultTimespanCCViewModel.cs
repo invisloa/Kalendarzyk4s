@@ -1,12 +1,12 @@
-﻿using CalendarT1.ViewModels;
-using CalendarT1.ViewModels.EventsViewModels;
+﻿using Kalendarzyk4s.ViewModels;
+using Kalendarzyk4s.ViewModels.EventsViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Views.CustomControls.CCViewModels
+namespace Kalendarzyk4s.Views.CustomControls.CCViewModels
 {
 	public class DefaultTimespanCCViewModel : BaseViewModel
 	{

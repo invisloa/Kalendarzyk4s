@@ -6,9 +6,9 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CalendarT1.Models.EventTypesModels;
+using Kalendarzyk4s.Models.EventTypesModels;
 
-namespace CalendarT1.Models.EventModels
+namespace Kalendarzyk4s.Models.EventModels
 {
 	public class QuantityModel
 	{

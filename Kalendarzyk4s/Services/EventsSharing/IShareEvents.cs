@@ -1,6 +1,6 @@
-﻿using CalendarT1.Models.EventModels;
+﻿using Kalendarzyk4s.Models.EventModels;
 
-namespace CalendarT1.Services.EventsSharing
+namespace Kalendarzyk4s.Services.EventsSharing
 {
 	public interface IShareEvents
 	{

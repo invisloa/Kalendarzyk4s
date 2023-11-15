@@ -1,7 +1,7 @@
-﻿using CalendarT1.Views;
+﻿using Kalendarzyk4s.Views;
 using System.Globalization;
 
-namespace CalendarT1;
+namespace Kalendarzyk4s;
 
 public partial class AppShell : Shell
 {

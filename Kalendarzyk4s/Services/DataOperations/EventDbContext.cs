@@ -1,9 +1,8 @@
-﻿using Android.Content;
-using CalendarT1.Models.EventModels;
+﻿using Kalendarzyk4s.Models.EventModels;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
-namespace CalendarT1.Services.DataOperations
+namespace Kalendarzyk4s.Services.DataOperations
 {
 	public class EventDbContext : DbContext
 	{

@@ -1,9 +1,9 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services;
-using CalendarT1.ViewModels;
-using CalendarT1.ViewModels.HelperClass;
-using CalendarT1.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services;
+using Kalendarzyk4s.ViewModels;
+using Kalendarzyk4s.ViewModels.HelperClass;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Views.CustomControls.CCViewModels
+namespace Kalendarzyk4s.Views.CustomControls.CCViewModels
 {
 	public class MeasurementSelectorCCViewModel : BaseViewModel, IMeasurementSelectorCC
 	{

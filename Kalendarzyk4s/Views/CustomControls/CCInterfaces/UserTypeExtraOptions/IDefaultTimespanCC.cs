@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Views.CustomControls.CCInterfaces.UserTypeExtraOptions
+namespace Kalendarzyk4s.Views.CustomControls.CCInterfaces.UserTypeExtraOptions
 {
 	public interface IDefaultTimespanCC
 	{

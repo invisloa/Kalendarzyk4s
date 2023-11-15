@@ -1,5 +1,5 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
 using Kalendarzyk4s.Helpers;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Helpers
+namespace Kalendarzyk4s.Helpers
 {
 	public class EventTimeConflictChecker : IEventTimeConflictChecker
 	{

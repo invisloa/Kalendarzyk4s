@@ -1,18 +1,18 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.ViewModels.HelperClass;
-using CalendarT1.Views.CustomControls;
-using CalendarT1.Views.CustomControls.CCViewModels;
-using CalendarT1.Views.CustomControls.CCViewModels.CalendarT1.Views.CustomControls.CCHelperClass;
-using CalendarT1.Views.CustomControls.CCInterfaces;
-using CalendarT1.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.ViewModels.HelperClass;
+using Kalendarzyk4s.Views.CustomControls;
+using Kalendarzyk4s.Views.CustomControls.CCViewModels;
+using Kalendarzyk4s.Views.CustomControls.CCViewModels.Kalendarzyk4s.Views.CustomControls.CCHelperClass;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
 using System.Collections.ObjectModel;
 using System.Globalization;
-using CalendarT1.Models;
-using CalendarT1.Helpers;
+using Kalendarzyk4s.Models;
+using Kalendarzyk4s.Helpers;
 
-namespace CalendarT1.Services
+namespace Kalendarzyk4s.Services
 {
 	public static class Factory
 	{

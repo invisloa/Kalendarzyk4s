@@ -1,6 +1,6 @@
-﻿using CalendarT1.Models.EventModels;
+﻿using Kalendarzyk4s.Models.EventModels;
 
-namespace CalendarT1.Helpers
+namespace Kalendarzyk4s.Helpers
 {
 	public interface IEventTimeConflictChecker
 	{

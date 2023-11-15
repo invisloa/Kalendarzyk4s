@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CalendarT1.Views.WelcomePage"
-             xmlns:customControls="clr-namespace:CalendarT1.Views.CustomControls"
-             xmlns:icon="clr-namespace:CalendarT1.Helpers"
+             x:Class="Kalendarzyk4s.Views.WelcomePage"
+             xmlns:customControls="clr-namespace:Kalendarzyk4s.Views.CustomControls"
+             xmlns:icon="clr-namespace:Kalendarzyk4s.Helpers"
              Title="WelcomePage">
 
     <StackLayout Background="White">

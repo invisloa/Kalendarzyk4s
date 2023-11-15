@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Services
+namespace Kalendarzyk4s.Services
 {
 	/// <summary>
 	/// Encryption and decryption service using AES algorithm

@@ -1,6 +1,6 @@
 using System.Windows.Input;
 
-namespace CalendarT1.Views.CustomControls;
+namespace Kalendarzyk4s.Views.CustomControls;
 
 public partial class ColorButtonsSelectorCC : ContentView
 {

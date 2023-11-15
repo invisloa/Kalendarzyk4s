@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Models.EventTypesModels
+namespace Kalendarzyk4s.Models.EventTypesModels
 {
 	public interface IMainEventType : IEquatable<object>
 	{

@@ -1,6 +1,6 @@
 using CommunityToolkit.Maui.Views;
 
-namespace CalendarT1.Views;
+namespace Kalendarzyk4s.Views;
 
 public partial class PopupCalendar : Popup
 {

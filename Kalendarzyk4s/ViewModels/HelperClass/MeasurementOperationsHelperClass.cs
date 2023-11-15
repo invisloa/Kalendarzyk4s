@@ -1,7 +1,7 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.ViewModels.HelperClass.ExtensionsMethods;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.ViewModels.HelperClass.ExtensionsMethods;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.ViewModels.HelperClass
+namespace Kalendarzyk4s.ViewModels.HelperClass
 {
 	public class MeasurementOperationsHelperClass : IMeasurementOperationsHelperClass
 	{

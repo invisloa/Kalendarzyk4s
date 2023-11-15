@@ -1,11 +1,11 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.Views.CustomControls.CCInterfaces;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 
-namespace CalendarT1.ViewModels.EventsViewModels
+namespace Kalendarzyk4s.ViewModels.EventsViewModels
 {
 	public class DailyEventsViewModel : AbstractEventViewModel
 	{

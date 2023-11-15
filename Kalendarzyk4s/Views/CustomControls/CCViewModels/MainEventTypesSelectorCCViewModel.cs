@@ -1,14 +1,14 @@
-﻿using CalendarT1.Models;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services;
-using CalendarT1.ViewModels;
-using CalendarT1.Views.CustomControls.CCInterfaces;
+﻿using Kalendarzyk4s.Models;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services;
+using Kalendarzyk4s.ViewModels;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace CalendarT1.Views.CustomControls.CCViewModels
+namespace Kalendarzyk4s.Views.CustomControls.CCViewModels
 {
 	public class MainEventTypesSelectorCCViewModel : BaseViewModel, IMainEventTypesCCViewModel
 	{

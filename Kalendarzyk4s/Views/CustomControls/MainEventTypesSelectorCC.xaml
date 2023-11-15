@@ -2,8 +2,8 @@
 <ContentView x:Name="MainEventTypesControl"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:converters="clr-namespace:CalendarT1.Helpers.Converters"
-             x:Class="CalendarT1.Views.CustomControls.MainEventTypesSelectorCC">
+             xmlns:converters="clr-namespace:Kalendarzyk4s.Helpers.Converters"
+             x:Class="Kalendarzyk4s.Views.CustomControls.MainEventTypesSelectorCC">
     <ContentView.Resources>
         <ResourceDictionary>
             <converters:BoolToAlphaConverter x:Key="boolToAlphaConverter" />

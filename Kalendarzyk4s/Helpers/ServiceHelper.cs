@@ -1,4 +1,4 @@
-﻿namespace CalendarT1.Helpers
+﻿namespace Kalendarzyk4s.Helpers
 {
 	public static class ServiceHelper
 	{

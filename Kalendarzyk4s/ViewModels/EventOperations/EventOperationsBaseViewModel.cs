@@ -1,19 +1,19 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.Views;
-using CalendarT1.Views.CustomControls.CCViewModels;
-using CalendarT1.Views.CustomControls.CCInterfaces;
-using CalendarT1.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.Views;
+using Kalendarzyk4s.Views.CustomControls.CCViewModels;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
 using CommunityToolkit.Mvvm.Input;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.ObjectModel;
 using System.Runtime.CompilerServices;
-using CalendarT1.Helpers;
+using Kalendarzyk4s.Helpers;
 
-namespace CalendarT1.ViewModels.EventOperations
+namespace Kalendarzyk4s.ViewModels.EventOperations
 {
 	/// <summary>
 	/// Contains only must know data for events

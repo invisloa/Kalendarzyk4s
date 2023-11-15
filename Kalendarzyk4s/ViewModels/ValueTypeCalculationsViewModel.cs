@@ -1,20 +1,20 @@
-﻿using CalendarT1.ViewModels.EventsViewModels;
-using CalendarT1.Views.CustomControls.CCInterfaces;
+﻿using Kalendarzyk4s.ViewModels.EventsViewModels;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CalendarT1.Services;
-using CalendarT1.Services.DataOperations.Interfaces;
+using Kalendarzyk4s.Services;
 using CommunityToolkit.Mvvm.Input;
-using CalendarT1.Models.EventTypesModels;
+using Kalendarzyk4s.Models.EventTypesModels;
 using System.Collections.ObjectModel;
-using CalendarT1.ViewModels.HelperClass;
-using CalendarT1.Models.EventModels;
-using CalendarT1.Views;
+using Kalendarzyk4s.ViewModels.HelperClass;
+using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Views;
+using Kalendarzyk4s.Services.DataOperations;
 
-namespace CalendarT1.ViewModels
+namespace Kalendarzyk4s.ViewModels
 {
 	public class ValueTypeCalculationsViewModel : PlainBaseAbstractEventViewModel, IFilterDatesCC
 	{

@@ -1,7 +1,7 @@
 using Microsoft.Maui.Layouts;
 using System.Collections;
 
-namespace CalendarT1.Views.CustomControls
+namespace Kalendarzyk4s.Views.CustomControls
 {
 	public partial class SelectableButtonFlexLayoutCC : FlexLayout
 	{

@@ -1,8 +1,8 @@
-﻿//using CalendarT1.Models.EventModels;
-//using CalendarT1.Services.DataOperations.Interfaces;
+﻿//using Kalendarzyk4s.Models.EventModels;
+//using Kalendarzyk4s.Services.DataOperations;
 //using System.Windows.Input;
 
-//namespace CalendarT1.ViewModels.EventOperations
+//namespace Kalendarzyk4s.ViewModels.EventOperations
 //{
 //    public class EventReminderPopupViewModel : EventOperationsBaseViewModel
 //	{

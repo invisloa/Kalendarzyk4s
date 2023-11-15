@@ -1,5 +1,5 @@
-﻿using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Views.CustomControls.CCViewModels;
+﻿using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Views.CustomControls.CCViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Views.CustomControls.CCInterfaces
+namespace Kalendarzyk4s.Views.CustomControls.CCInterfaces
 {
 
 	/// <summary>

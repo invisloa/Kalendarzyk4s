@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CalendarT1.Models.EventTypesModels;
-using Kalendarzyk4s.Models.EventModels;
 using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Models.EventModels;
 
-namespace CalendarT1.Models.EventModels
+namespace Kalendarzyk4s.Models.EventModels
 {
 	public class EventModel : AbstractEventModel
 	{

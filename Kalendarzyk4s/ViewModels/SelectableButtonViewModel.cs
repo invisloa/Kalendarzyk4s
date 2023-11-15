@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace CalendarT1.ViewModels
+namespace Kalendarzyk4s.ViewModels
 {/// <summary>
  /// Button that can be selected and deselected with a border around it
  /// Also has a command that can be executed when the button is selected

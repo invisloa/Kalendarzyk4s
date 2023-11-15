@@ -1,12 +1,11 @@
-﻿namespace CalendarT1.Views.CustomControls
+﻿namespace Kalendarzyk4s.Views.CustomControls
 {
 	using Microsoft.Maui.Graphics;
-	using CalendarT1.Models.EventModels;
+	using Kalendarzyk4s.Models.EventModels;
 	using System;
 	using System.Linq;
-	using static CalendarT1.App;
+	using static Kalendarzyk4s.App;
 	using Microsoft.Maui.Layouts;
-	using static Microsoft.Maui.Controls.Device;
 
 	public class MonthlyEventsControl : BaseEventPageCC
 	{

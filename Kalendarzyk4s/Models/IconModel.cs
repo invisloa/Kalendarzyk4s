@@ -6,8 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using JsonIgnoreAttribute = Newtonsoft.Json.JsonIgnoreAttribute;
 
-namespace CalendarT1.Models
+namespace Kalendarzyk4s.Models
 {
 	public class IconModel : IMainTypeVisualModel
 	{

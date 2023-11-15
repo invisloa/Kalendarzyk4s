@@ -1,13 +1,13 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
-using CalendarT1.Services.DataOperations.Interfaces;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
+using Kalendarzyk4s.Services.DataOperations;
 using Newtonsoft.Json;
 using Microsoft.Maui;
 using CommunityToolkit.Maui.Storage;
 using System.Text;
 using CommunityToolkit.Maui.Alerts;
-using CalendarT1;
-using CalendarT1.Services;
+using Kalendarzyk4s;
+using Kalendarzyk4s.Services;
 using System.Security.Cryptography;
 
 public class LocalMachineEventRepository : IEventRepository

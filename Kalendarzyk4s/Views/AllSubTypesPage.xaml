@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:models="clr-namespace:CalendarT1.Models.EventTypesModels"
-             x:Class="CalendarT1.Views.AllSubTypesPage"
+             xmlns:models="clr-namespace:Kalendarzyk4s.Models.EventTypesModels"
+             x:Class="Kalendarzyk4s.Views.AllSubTypesPage"
              Title="AllSubTypesPage">
     <VerticalStackLayout  BackgroundColor="{DynamicResource MainBackgroundColor}">
         <FlexLayout BindableLayout.ItemsSource="{Binding AllSubEventTypesOC}"

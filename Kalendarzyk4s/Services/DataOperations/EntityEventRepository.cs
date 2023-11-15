@@ -1,11 +1,11 @@
-﻿/*using CalendarT1.Models.EventModels;
-using CalendarT1.Services.DataOperations.Interfaces;
+﻿/*using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Services.DataOperations;
 using Microsoft.EntityFrameworkCore;
 
 
 
 
-namespace CalendarT1.Services.DataOperations
+namespace Kalendarzyk4s.Services.DataOperations
 {
     public class EntityEventRepository : IEventRepository
 	{

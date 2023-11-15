@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.ViewModels.HelperClass.ExtensionsMethods
+namespace Kalendarzyk4s.ViewModels.HelperClass.ExtensionsMethods
 {
 	public static class DateTimeExtensions
 	{

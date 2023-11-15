@@ -1,7 +1,7 @@
-﻿using CalendarT1.Models.EventModels;
-using CalendarT1.Models.EventTypesModels;
+﻿using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Models.EventTypesModels;
 
-namespace CalendarT1.Services.DataOperations
+namespace Kalendarzyk4s.Services.DataOperations
 {
 	public interface IEventRepository
 	{

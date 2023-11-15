@@ -1,13 +1,13 @@
-﻿namespace CalendarT1.Views.CustomControls
+﻿namespace Kalendarzyk4s.Views.CustomControls
 {
-	using CalendarT1.Models.EventModels;
-	using CalendarT1.Services;
+	using Kalendarzyk4s.Models.EventModels;
+	using Kalendarzyk4s.Services;
+	using Kalendarzyk4s.Views.CustomControls;
 	using Microsoft.Maui.Controls;
 	using System;
 	using System.Collections.ObjectModel;
 	using System.Linq;
-	using static CalendarT1.App;
-	using static Microsoft.Maui.Controls.Device;
+	using static Kalendarzyk4s.App;
 	using MauiGrid = Microsoft.Maui.Controls.Grid;
 
 	public class WeeklyEventsControl : BaseEventPageCC

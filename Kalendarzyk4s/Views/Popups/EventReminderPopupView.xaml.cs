@@ -1,9 +1,9 @@
-using CalendarT1.Models.EventModels;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.ViewModels.EventOperations;
+using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.ViewModels.EventOperations;
 using CommunityToolkit.Maui.Views;
 
-namespace CalendarT1.Views;
+namespace Kalendarzyk4s.Views;
 
 public partial class EventReminderPopupView : Popup
 {

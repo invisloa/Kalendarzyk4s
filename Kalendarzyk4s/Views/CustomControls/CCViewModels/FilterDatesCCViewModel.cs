@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.Views.CustomControls.CCViewModels
+namespace Kalendarzyk4s.Views.CustomControls.CCViewModels
 {
-	using global::CalendarT1.Views.CustomControls.CCInterfaces;
+	using global::Kalendarzyk4s.Views.CustomControls.CCInterfaces;
 	using System;
 	using System.Collections.ObjectModel;
 
-	namespace CalendarT1.Views.CustomControls.CCHelperClass
+	namespace Kalendarzyk4s.Views.CustomControls.CCHelperClass
 	{
 		public class FilterDatesCCViewModel : IFilterDatesCC, IFilterDatesCCHelperClass
 		{

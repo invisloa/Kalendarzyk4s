@@ -1,7 +1,7 @@
-﻿using CalendarT1.Models.EventModels;
+﻿using Kalendarzyk4s.Models.EventModels;
 using System.Collections.ObjectModel;
 
-namespace CalendarT1.Views.CustomControls.CCInterfaces
+namespace Kalendarzyk4s.Views.CustomControls.CCInterfaces
 {
 	public interface IFilterDatesCC
 	{

@@ -4,21 +4,21 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
-using CalendarT1.Models.EventTypesModels;
+using Kalendarzyk4s.Models.EventTypesModels;
 using Newtonsoft.Json;
-using CalendarT1.Services;
-using CalendarT1.Services.DataOperations.Interfaces;
+using Kalendarzyk4s.Services;
+using Kalendarzyk4s.Services.DataOperations;
 using CommunityToolkit.Mvvm.Input;
-using CalendarT1.Views;
-using CalendarT1.Views.CustomControls.CCInterfaces;
-using CalendarT1.Models.EventModels;
-using CalendarT1.Views.CustomControls.CCViewModels;
+using Kalendarzyk4s.Views;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces;
+using Kalendarzyk4s.Models.EventModels;
+using Kalendarzyk4s.Views.CustomControls.CCViewModels;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
-using CalendarT1.Helpers;
-using CalendarT1.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
+using Kalendarzyk4s.Helpers;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces.UserTypeExtraOptions;
 
-namespace CalendarT1.ViewModels
+namespace Kalendarzyk4s.ViewModels
 {
 	public class AddNewSubTypePageViewModel : BaseViewModel
 	{

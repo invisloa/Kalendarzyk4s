@@ -1,4 +1,4 @@
-﻿namespace CalendarT1.Views.CustomControls.CCViewModels
+﻿namespace Kalendarzyk4s.Views.CustomControls.CCViewModels
 {
 	public interface IUserTypeExtraOptionsViewModel
 	{

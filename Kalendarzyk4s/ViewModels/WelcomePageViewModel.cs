@@ -1,8 +1,8 @@
-﻿using CalendarT1.Models;
-using CalendarT1.Services;
-using CalendarT1.Services.DataOperations.Interfaces;
-using CalendarT1.Views.CustomControls.CCInterfaces;
-using CalendarT1.Views.CustomControls.CCViewModels;
+﻿using Kalendarzyk4s.Models;
+using Kalendarzyk4s.Services;
+using Kalendarzyk4s.Services.DataOperations;
+using Kalendarzyk4s.Views.CustomControls.CCInterfaces;
+using Kalendarzyk4s.Views.CustomControls.CCViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalendarT1.ViewModels
+namespace Kalendarzyk4s.ViewModels
 {
 	internal class WelcomePageViewModel : BaseViewModel
 	{
