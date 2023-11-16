@@ -16,6 +16,8 @@ public partial class App : Application
 		_repository.ClearAllSubEventTypesAsync();
 		_repository.ClearAllMainEventTypesAsync();
 	}
+
+	// it adds data before the app starts and json files are created
 	public void AddDummyData()
 	{
 		if (_repository.AllEventsList.Count > 0)
@@ -67,6 +69,8 @@ public partial class App : Application
 
 		// ClearData();
 
+
+		// it adds data before the app starts and json files are created
 		// AddDummyData();
 
 		InitializeComponent();

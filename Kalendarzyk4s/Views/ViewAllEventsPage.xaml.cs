@@ -8,7 +8,6 @@ namespace Kalendarzyk4s.Views;
 
 public partial class ViewAllEventsPage : ContentPage
 {
-	// for viewing all events
 	public ViewAllEventsPage()
 	{
 		// Retrieve the view model from DI container
@@ -21,7 +20,7 @@ public partial class ViewAllEventsPage : ContentPage
 			viewModel.BindDataToScheduleList();
 		};
 	}
-	// for viewing all specific type of events
+	// for viewing specific type of events
 	public ViewAllEventsPage(IEventRepository eventRepository, ISubEventTypeModel eventTypeModel)
 	{
 		BindingContext = new AllEventsViewModel(eventRepository, eventTypeModel);
