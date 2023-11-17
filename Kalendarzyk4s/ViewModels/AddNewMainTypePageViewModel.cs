@@ -170,7 +170,7 @@ namespace Kalendarzyk4s.ViewModels
 			ExactIconSelectedCommand = new RelayCommand<string>(OnExactIconSelectedCommand);
 		}
 
-		private void InitializeSelectors()
+		private void InitializeSelectors()		// TODO CHANGE THIS TO DYNAMIC LIST !!!!!
 		{
 			SelectedVisualElementString = IconFont.Minor_crash;
 			MainButtonVisualsSelectors = new ObservableCollection<SelectableButtonViewModel>

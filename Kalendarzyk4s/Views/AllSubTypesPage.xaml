@@ -2,8 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:Kalendarzyk4s.Models.EventTypesModels"
+             xmlns:converters="clr-namespace:Kalendarzyk4s.Helpers.Converters"
              x:Class="Kalendarzyk4s.Views.AllSubTypesPage"
              Title="AllSubTypesPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:BoolToAlphaConverter x:Key="boolToAlphaConverter" />
+            <converters:BoolToScaleConverter x:Key="boolToScaleConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <VerticalStackLayout  BackgroundColor="{DynamicResource MainBackgroundColor}">
         <FlexLayout BindableLayout.ItemsSource="{Binding AllSubEventTypesOC}"
                                 Wrap="Wrap" 

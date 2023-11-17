@@ -48,7 +48,7 @@
 
         <!-- TO SHOW ONLY IF ICONS ARE SELECTED !!!-->
         <StackLayout Margin="10">
-            <customControls:SelectableButtonFlexLayoutCC ItemsSource="{Binding IconsTabsOC, Mode=TwoWay}" AlignItems="Start" JustifyContent="Start" ButtonBackground="DarkViolet" />
+            <customControls:SelectableButtonFlexLayoutCC ItemsSource="{Binding IconsTabsOC, Mode=TwoWay}" AlignItems="Start" JustifyContent="Start" />
             <!-- Icon Selection UI -->
             <!-- TO SHOW ONLY IF ICONS ARE SELECTED !!!-->
             <CollectionView ItemsSource="{Binding IconsToShowStringsOC, Mode=TwoWay}" HorizontalOptions="FillAndExpand" Margin="10">
@@ -58,17 +58,16 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <Label 
-                    Text="{Binding .}"
-                    Style="{StaticResource GoogleFont}"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
                             <Button 
-                    Command="{Binding Path=BindingContext.ExactIconSelectedCommand, Source={x:Reference AddNewMainTypePageName}}" 
-                    CommandParameter="{Binding .}"
-                    BackgroundColor="Transparent"
-                    HorizontalOptions="FillAndExpand" 
-                    VerticalOptions="FillAndExpand"/>
+                                Command="{Binding Path=BindingContext.ExactIconSelectedCommand, Source={x:Reference AddNewMainTypePageName}}" 
+                                CommandParameter="{Binding .}"
+                                HorizontalOptions="FillAndExpand" 
+                                VerticalOptions="FillAndExpand"/>
+                            <Label 
+                                    Text="{Binding .}"
+                                    Style="{StaticResource GoogleFont}"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

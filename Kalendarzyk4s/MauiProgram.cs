@@ -37,9 +37,7 @@ public static class MauiProgram
 		// Interfaces DI Dependency Injection for events repository
 		builder.Services.AddSingleton<IEventRepository, LocalMachineEventRepository>();         // events repository DI
 		builder.Services.AddScoped<IShareEvents, ShareEventsJson>();
-		Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient<AddNewSubTypePageViewModel>(builder.Services);
-
-
+		
 		// ViewModels register
 		// AddSingleton - one instance for all timne
 		// AddTransient - new instance every time
