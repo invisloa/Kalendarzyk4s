@@ -51,7 +51,7 @@
             <customControls:SelectableButtonFlexLayoutCC ItemsSource="{Binding IconsTabsOC, Mode=TwoWay}" AlignItems="Start" JustifyContent="Start" />
             <!-- Icon Selection UI -->
             <!-- TO SHOW ONLY IF ICONS ARE SELECTED !!!-->
-            <CollectionView ItemsSource="{Binding IconsToShowStringsOC, Mode=TwoWay}" HorizontalOptions="FillAndExpand" Margin="10">
+            <CollectionView ItemsSource="{Binding IconsToShowStringsOC, Mode=TwoWay}" HorizontalOptions="FillAndExpand" Margin="30">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" Span="3" />
                 </CollectionView.ItemsLayout>

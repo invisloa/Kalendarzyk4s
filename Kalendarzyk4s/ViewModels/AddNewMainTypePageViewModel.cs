@@ -26,7 +26,6 @@ namespace Kalendarzyk4s.ViewModels
 		private bool _isEdit;
 		private Dictionary<string, RelayCommand<SelectableButtonViewModel>> iconCommandsDictionary;
 		private string lastSelectedIconType = "Top";
-		private ObservableCollection<SelectableButtonViewModel> _tempButtonsColorsOC = new ObservableCollection<SelectableButtonViewModel>();
 		private bool _isBgColorsSelected;
 
 		public string MyTestFont { get; set; } = IconFont.Home_filled;
@@ -335,32 +334,11 @@ namespace Kalendarzyk4s.ViewModels
 
 		private void InitializeColorButtons()
 		{
-
-			if (_tempButtonsColorsOC.Count == 0)
 			{
 				ButtonsColorsInitializerHelperClass buttonsColorsInitializerHelperClass = new ButtonsColorsInitializerHelperClass();
-
 				// consider not reloading the buttons if they are already loaded - but there is a problem with relaycommand not reloading
 				ButtonsColorsOC = buttonsColorsInitializerHelperClass.ButtonsColorsOC;
-				foreach (var button in ButtonsColorsOC)
-				{
-					_tempButtonsColorsOC.Add(new SelectableButtonViewModel { ButtonColor = button.ButtonColor });
-				}
 				OnPropertyChanged(nameof(ButtonsColorsOC));
-			}
-			else
-			{
-				if (ButtonsColorsOC.Count > 0)
-				{
-					return;
-				}
-				else
-				{
-					foreach (var button in _tempButtonsColorsOC)
-					{
-						ButtonsColorsOC.Add(new SelectableButtonViewModel { ButtonColor = button.ButtonColor });
-					}
-				}
 			}
 		}
 		private void OnTextColorSeletctionCommand(SelectableButtonViewModel clickedButton)
