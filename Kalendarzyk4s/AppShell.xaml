@@ -11,6 +11,25 @@
     Route="ViewAllEventsPage"
     IsVisible="True" />-->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Adding Data">
+            <ShellContent
+                Title="Add New MainTypes"
+                ContentTemplate="{DataTemplate local:AddNewMainTypePage}"
+                Route="AddNewMainTypePage" />
+            <ShellContent
+                Title="Add New Events"
+                ContentTemplate="{DataTemplate local:EventPage}"
+                Route="EventPage" />
+
+            <ShellContent
+                Title="Add New SubTypes"
+                ContentTemplate="{DataTemplate local:AddNewSubTypePage}"
+                Route="AddNewSubTypePage" />
+
+        </Tab>
+    </FlyoutItem>
+    
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Preferences">
             <ShellContent
                 Title="Preferences"
@@ -36,23 +55,7 @@
                 Route="DailyEvents" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Adding Data">
-            <ShellContent
-                Title="Add New Events"
-                ContentTemplate="{DataTemplate local:EventPage}"
-                Route="EventPage" />
-            <ShellContent
-                Title="Add New MainTypes"
-                ContentTemplate="{DataTemplate local:AddNewMainTypePage}"
-                Route="AddNewMainTypePage" />
-            <ShellContent
-                Title="Add New SubTypes"
-                ContentTemplate="{DataTemplate local:AddNewSubTypePage}"
-                Route="AddNewSubTypePage" />
 
-        </Tab>
-    </FlyoutItem>
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="All Items Lists">
 
