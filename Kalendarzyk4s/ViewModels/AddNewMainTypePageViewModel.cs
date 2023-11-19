@@ -21,17 +21,19 @@ namespace Kalendarzyk4s.ViewModels
 		private IMainEventType _currentMainType;
 		private string _mainTypeName;
 		private string _selectedVisualElementString;
-		private Color _backgroundColor;
-		private Color _textColor;
+		private Color _backgroundColor = Color.FromArgb("#fff");
+		private Color _textColor = Color.FromArgb("#000");
 		private bool _isEdit;
 		private Dictionary<string, RelayCommand<SelectableButtonViewModel>> iconCommandsDictionary;
 		private string lastSelectedIconType = "Top";
-		private bool _isBgColorsSelected;
+		public ObservableCollection<SelectableButtonViewModel> BgColorsButtonsOC { get; set; }
+		public ObservableCollection<SelectableButtonViewModel> TextColorsButtonsOC { get; set; }
 
+		public Color TESTBUTTONCOLOR
+		{ get => Colors.Red; }
 		public string MyTestFont { get; set; } = IconFont.Home_filled;
 
 		public ObservableCollection<SelectableButtonViewModel> MainButtonVisualsSelectors { get; set; }
-		public ObservableCollection<SelectableButtonViewModel> ButtonsColorsOC { get; set; }
 		public ObservableCollection<SelectableButtonViewModel> IconsTabsOC { get; set; }
 
 		public string SubmitMainTypeButtonText => _isEdit ? "SUBMIT CHANGES" : "ADD NEW MAIN TYPE";
@@ -91,10 +93,8 @@ namespace Kalendarzyk4s.ViewModels
 		public RelayCommand<string> ExactIconSelectedCommand { get; set; }
 		public AsyncRelayCommand SubmitAsyncMainTypeCommand { get; set; }
 		public AsyncRelayCommand DeleteAsyncSelectedMainEventTypeCommand { get; set; }
-		/*		public RelayCommand<SelectableButtonViewModel> ActivitiesIconsCommand { get; set; }
-				public RelayCommand<SelectableButtonViewModel> HomeIconsCommand { get; set; }
-				public RelayCommand<SelectableButtonViewModel> Top3IconsCommand { get; set; }*/
-		public RelayCommand<SelectableButtonViewModel> SelectColorCommand { get; private set; }
+		public RelayCommand<SelectableButtonViewModel> BgColorsCommand { get; private set; }
+		public RelayCommand<SelectableButtonViewModel> TextColorsCommand { get; private set; }
 		#endregion
 
 
@@ -126,13 +126,14 @@ namespace Kalendarzyk4s.ViewModels
 
 		#endregion
 
-
-
 		#region private methods
 		private void InitializeCommon()
 		{
+			BgColorsButtonsOC = SelectableButtonHelper.GenerateColorPaletteButtons();
+			TextColorsButtonsOC = SelectableButtonHelper.GenerateColorPaletteButtons();
+			BgColorsCommand = new RelayCommand<SelectableButtonViewModel>(OnBgColorSeletctionCommand);
+			TextColorsCommand = new RelayCommand<SelectableButtonViewModel>(OnTextColorSeletctionCommand);
 			RefreshIconsToShowOC();
-			InitializeColors();
 			InitializeCommands();
 			InitializeSelectors();
 		}
@@ -156,12 +157,6 @@ namespace Kalendarzyk4s.ViewModels
 				{ "Others", IconsHelperClass.GetTopIcons2() }
 			};
 		}
-		private void InitializeColors()
-		{
-			BackgroundColor = Color.FromArgb("#fff");
-			TextColor = Color.FromArgb("#000");
-		}
-
 		private void InitializeCommands()
 		{
 			GoToAllMainTypesPageCommand = new RelayCommand(OnGoToAllMainTypesPageCommand);
@@ -253,7 +248,7 @@ namespace Kalendarzyk4s.ViewModels
 		}
 		private void OnExactIconsTabClick(SelectableButtonViewModel clickedButton, ObservableCollection<string> iconsToShowOC)
 		{
-			SingleButtonSelection(clickedButton, IconsTabsOC);
+			SelectableButtonViewModel.SingleButtonSelection(clickedButton, IconsTabsOC);
 			lastSelectedIconType = clickedButton.ButtonText;
 			IconsToShowStringsOC = iconsToShowOC;
 			OnPropertyChanged(nameof(IconsToShowStringsOC));
@@ -278,11 +273,7 @@ namespace Kalendarzyk4s.ViewModels
 
 		private void OnShowIconsTabCommand(SelectableButtonViewModel clickedButton)
 		{
-			SingleButtonSelection(clickedButton, MainButtonVisualsSelectors);
-			if (ButtonsColorsOC != null)
-			{
-				ButtonsColorsOC.Clear();
-			}
+			SelectableButtonViewModel.SingleButtonSelection(clickedButton, MainButtonVisualsSelectors);
 			InitializeIconsTabs();
 			var buttonToSelect = IconsTabsOC.Single(x => x.ButtonText == lastSelectedIconType);
 			OnExactIconsTabClick(buttonToSelect, _stringToOCMapper[lastSelectedIconType]);
@@ -299,48 +290,19 @@ namespace Kalendarzyk4s.ViewModels
 				IconsToShowStringsOC.Clear();
 			}
 		}
-		private void SingleButtonSelection(SelectableButtonViewModel clickedButton, ObservableCollection<SelectableButtonViewModel> buttonsToDeselect)
-		{
-			DeselectAllButtons(buttonsToDeselect);
-			clickedButton.IsSelected = true;
-		}
-		private void DeselectAllButtons(ObservableCollection<SelectableButtonViewModel> buttonsToDeselect)
-		{
-			foreach (var button in buttonsToDeselect)
-			{
-				button.IsSelected = false;
-			}
-		}
-
-
 
 		#region COLOR BUTTONS
 		private void OnShowBgColorsCommand(SelectableButtonViewModel clickedButton)
 		{
-			_isBgColorsSelected = true;
 			ClearIconsTabs();
-			SelectColorCommand = new RelayCommand<SelectableButtonViewModel>(OnBgColorSeletctionCommand);
-			SingleButtonSelection(clickedButton, MainButtonVisualsSelectors);
-			InitializeColorButtons();
+			SelectableButtonViewModel.SingleButtonSelection(clickedButton, MainButtonVisualsSelectors);
 		}
 		private void OnShowTextColorsCommand(SelectableButtonViewModel clickedButton)
 		{
-			_isBgColorsSelected = false;
 			ClearIconsTabs();
-			SelectColorCommand = new RelayCommand<SelectableButtonViewModel>(OnTextColorSeletctionCommand);
-			SingleButtonSelection(clickedButton, MainButtonVisualsSelectors);
-			InitializeColorButtons();
+			SelectableButtonViewModel.SingleButtonSelection(clickedButton, MainButtonVisualsSelectors);
 		}
 
-		private void InitializeColorButtons()
-		{
-			{
-				ButtonsColorsInitializerHelperClass buttonsColorsInitializerHelperClass = new ButtonsColorsInitializerHelperClass();
-				// consider not reloading the buttons if they are already loaded - but there is a problem with relaycommand not reloading
-				ButtonsColorsOC = buttonsColorsInitializerHelperClass.ButtonsColorsOC;
-				OnPropertyChanged(nameof(ButtonsColorsOC));
-			}
-		}
 		private void OnTextColorSeletctionCommand(SelectableButtonViewModel clickedButton)
 		{
 			TextColor = clickedButton.ButtonColor;

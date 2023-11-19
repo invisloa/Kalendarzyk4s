@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 namespace Kalendarzyk4s.ViewModels
@@ -35,6 +36,18 @@ namespace Kalendarzyk4s.ViewModels
 				OnPropertyChanged();
 				OnPropertyChanged(nameof(ButtonBorder));
 				OnPropertyChanged(nameof(ButtonOpacity));
+			}
+		}
+		public static void SingleButtonSelection(SelectableButtonViewModel clickedButton, ObservableCollection<SelectableButtonViewModel> buttonsToDeselect)
+		{
+			DeselectAllButtons(buttonsToDeselect);
+			clickedButton.IsSelected = true;
+		}
+		public static void DeselectAllButtons(ObservableCollection<SelectableButtonViewModel> buttonsToDeselect)
+		{
+			foreach (var button in buttonsToDeselect)
+			{
+				button.IsSelected = false;
 			}
 		}
 		public float ButtonOpacity => IsSelected ? FullOpacity : FadedOpacity;

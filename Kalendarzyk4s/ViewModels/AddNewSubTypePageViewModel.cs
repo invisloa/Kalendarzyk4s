@@ -244,10 +244,10 @@ namespace Kalendarzyk4s.ViewModels
 		{
 			Application.Current.MainPage.Navigation.PushAsync(new AllSubTypesPage());
 		}
-		private void InitializeColorButtons() //TODO ! also to extract as a separate custom control
+		private void InitializeColorButtons() //TODO NOW !!!!!!! 
 		{
-			ButtonsColorsInitializerHelperClass buttonsColorsInitializerHelperClass = new ButtonsColorsInitializerHelperClass();
-			ButtonsColorsOC = buttonsColorsInitializerHelperClass.ButtonsColorsOC;
+/*			ButtonsColorsInitializerHelperClass buttonsColorsInitializerHelperClass = new ButtonsColorsInitializerHelperClass();
+			ButtonsColorsOC = buttonsColorsInitializerHelperClass.GenerateColorPallete();*/
 		}
 		public void SetExtraUserControlsValues(ISubEventTypeModel _currentType)
 		{
